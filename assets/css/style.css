@@ -175,7 +175,7 @@ html{
     margin-top: 46px;
     /* chiều cao của slider sẽ được tạo ra từ khối padding */
     padding-top: 50%; /* 50% chiều ngang của chính nó */
-    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
     position: relative;
 }
 
