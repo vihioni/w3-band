@@ -38,7 +38,7 @@
                 <i class="search-icon ti-search"></i>
             </div>
 
-            <div id="mobile-menu" class="mobile-menu-btn">
+            <div id="mobile-menu-btn" class="mobile-menu-btn">
                 <i class="menu-icon ti-menu"></i>
             </div>
             
@@ -173,7 +173,7 @@
             <p class="copyright">Powered by <a href="">w3.css</a></p>
         </div>
     </div>
-
+    <!-- buy ticket modal -->
     <div class="modal js-modal">
         <div class="modal-container js-modal-container">
             <div class="modal-close js-modal-close">
@@ -236,7 +236,7 @@
         modalClose.addEventListener('click', hideBuyTickets) //vì nút close chỉ có 1, không là danh sách nên không cần lặp
         modal.addEventListener('click', hideBuyTickets)
         modalContainer.addEventListener('click', function (event) {//viết thẳng function vào lệnh thì ko cần đặt tên
-            event.stopPropagation()
+            event.stopPropagation();
         }) 
     </script>
 
@@ -245,7 +245,7 @@
         // lấy id header
         var header = document.getElementById('header');
         // lấy id mobile-menu
-        var mobileMenu = document.getElementById('mobile-menu');
+        var mobileMenu = document.getElementById('mobile-menu-btn');
         //lấy giá trị thuộc tính height
         var headerHeight = header.clientHeight;
 
@@ -271,14 +271,14 @@
         }
     </script>
 
-    <!-- tự động đóng khi chọn menu mobile trừ thẻ more-->
+    <!-- mở menu cấp 2 của more-->
     <script>
-        // lấy tất cả thẻ a có href=#
+        // lấy tất cả thẻ a có href=    
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
 
         //lặp qua từng phần tử trên nav
         for (var i = 0; i  <menuItems.length; i++){
-            var menuItem = menuItems[i];
+            var menuItem = menuItems[i]; 
             
             menuItem.onclick = function(event){
                 // kiểm tra xem phần tử nav có là thẻ cha hay ko và có chứa thẻ con class subnav hay ko
