@@ -28,6 +28,10 @@
         padding: 13px 0;
         display: inline-block;
     }
+
+    .modal-container{
+        margin: 0px 24px;
+    }
 }
 
 /* tablet */
